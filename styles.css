@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,9 +9,13 @@ body{
     background: lightslategray;
 }
 
-.container{
+.main {
     width: 100%;
-    max-width: 100vh;
+    min-height: 100vh;
+    padding-bottom: 50px;
+    background-color: #81ecec;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .box{
@@ -21,8 +25,8 @@ body{
     margin: 35px;
     margin-top: 50px;
     border-collapse: collapse;
-    display: flex;
-    flex-wrap: wrap;
+    margin: 15px;
+    margin-top: 55px;
 }
 
 .header{
@@ -64,7 +68,7 @@ textarea:focus{
     align-items: center;
     justify-content: center;
     /* font-size: 30px; */
-    position: fixed;
+    /* position: fixed;
     top: 5px;
     right: 20px;
     padding-right: 20px;
@@ -85,4 +89,69 @@ textarea:focus{
 }
 p{
     font-size: 18px;
+} */ */
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 50px;
+    background-color: #81ecec;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#addBtn {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    background-color: #2d3436;
+    color: white;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    margin: 15px;
+    margin-top: 55px;
+}
+
+.header {
+    width: 100%;
+    background-color: #2d3436;
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: end;
+}
+
+ion-icon {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.box textarea {
+    border: none;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.box textarea:focus {
+    border: 0;
+    outline: 0;
 }
