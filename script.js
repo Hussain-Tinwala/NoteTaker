@@ -1,5 +1,5 @@
 const addbtn= document.querySelector("#addbtn")
-const main= document.querySelector(".box")
+const main= document.querySelector(".main")
 
 addbtn.addEventListener("click", function(){
     addNote()
